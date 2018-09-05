@@ -4,4 +4,3 @@ test/e2e/*.js
 test/**/*.js
 
 src/renderer/components/common/base
-src/renderer/components/main/reconnectws.js

@@ -1,3 +1,6 @@
+/**
+ * localStorage
+ */
 const TOKEN_KEY = 'SCREEN_TOKEN'
 
 const base = {
