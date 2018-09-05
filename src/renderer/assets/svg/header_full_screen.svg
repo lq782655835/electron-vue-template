@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="15px" viewBox="0 0 15 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>全屏</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="会议显示" transform="translate(-1046.000000, -16.000000)" fill-rule="nonzero" fill="#536683">
+            <g id="Group-2" transform="translate(1046.000000, 16.000000)">
+                <g id="Group">
+                    <path d="M13.2054796,14 L9.5,14 L9.5,15 L15,15 L15,9.5 L14,9.5 L14,13.3803069 L9.46186884,8.84217572 L8.75476206,9.5492825 L13.2054796,14 Z M1.5,2.29425747 L1.5,6 L0.5,6 L0.5,0.5 L6,0.5 L6,1.5 L2.11995609,1.5 L7.17185677,6.55190068 L6.46474999,7.25900746 L1.5,2.29425747 Z M1.5,14 L6,14 L6,15 L0.5,15 L0.5,9.5 L1.5,9.5 L1.5,14 Z M9.5,1.5 L9.5,0.5 L15,0.5 L15,6 L14,6 L14,1.5 L9.5,1.5 Z" id="全屏"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

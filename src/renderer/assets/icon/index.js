@@ -1,0 +1,11 @@
+/* eslint-disable */
+require('./header_close')
+require('./header_full_screen')
+require('./header_minimize')
+require('./tool_align_center')
+require('./tool_align_left')
+require('./tool_align_right')
+require('./tool_skin')
+require('./tool_text')
+require('./tooltip_fail')
+require('./tooltip_success')

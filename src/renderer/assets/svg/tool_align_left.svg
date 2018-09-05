@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>对齐方式-左对齐</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="会议显示" transform="translate(-961.000000, -18.000000)" fill="#536683">
+            <path d="M961,18 L975,18 L975,19.5 L961,19.5 L961,18 Z M961,22 L970,22 L970,23.5 L961,23.5 L961,22 Z M961,26 L970,26 L970,27.5 L961,27.5 L961,26 Z M961,30 L975,30 L975,31.5 L961,31.5 L961,30 Z" id="对齐方式-左对齐"></path>
+        </g>
+    </g>
+</svg>

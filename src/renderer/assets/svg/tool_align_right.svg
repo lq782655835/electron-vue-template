@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>对齐方式-右对齐</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="会议显示-排版" transform="translate(-961.000000, -131.000000)" fill="#536683">
+            <g id="Group-5-Copy" transform="translate(938.000000, 47.000000)">
+                <g id="Group-5">
+                    <path d="M23,84 L37,84 L37,85.5 L23,85.5 L23,84 Z M23,88 L32,88 L32,89.5 L23,89.5 L23,88 Z M23,92 L32,92 L32,93.5 L23,93.5 L23,92 Z M23,96 L37,96 L37,97.5 L23,97.5 L23,96 Z" id="对齐方式-右对齐" transform="translate(30.000000, 90.750000) scale(-1, 1) translate(-30.000000, -90.750000) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
