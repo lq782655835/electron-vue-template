@@ -23,6 +23,8 @@
 ``` bash
 git clone https://github.com/lq782655835/electron-vue-template.git
 
+cd electron-vue-template
+
 npm install && npm run dev
 ```
 
