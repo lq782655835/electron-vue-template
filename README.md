@@ -1,22 +1,23 @@
 # electron-vue-template
 
-> 本项目在electron-vue脚手架基础上，包含轻量级组件库以及整理结构目录，帮助初次使用electron同学，提供一个较为完整的项目案例。项目中有些踩坑的点，包括一些不同平台打包差异，以及其他细节点，相信对做工程项目同学有借鉴意义，记录在[这里](https://github.com/lq782655835/blogs/issues/13)
+> 本项目在electron-vue脚手架基础上，包含轻量级组件库、整理结构目录、以及工程必需的打包、自动更新、日志记录、网络检测等成套解决方案。帮助初次使用electron同学，提供一个较为完整的工程案例。项目中有些踩坑的点，包括一些不同平台打包差异，以及其他细节点，相信对做工程项目同学有借鉴意义，记录在[这里](https://github.com/lq782655835/blogs/issues/13)
 
 - [x] 开发规范：eslint + perttier + husky
 
 - [x] css处理：scss + scss resource
 
-- [x] svg处理：svgicon
+- [x] 轻量组件： link + button + icon（svgicon） + input + modal + select + tabs + toast
 
-- [x] 常用组件： link + button + icon + input + modal + select + tabs + toast
-
-- [x] 路由: vue-router
-
-- [x] 请求层： axios
-
-- [x] 数据： vuex
+- [x] vue全家桶: vue-router/vuex/axios(vue官方推荐)
 
 - [x] 打包： electron-builder
+
+- [x] 自动更新： electron-updater
+
+- [x] 日志记录： electron-log
+
+- [x] 网络检测： electron-log
+
 
 ### 安装与使用
 
