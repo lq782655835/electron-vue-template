@@ -1,9 +1,9 @@
 {
-  "name": "electron-vue-template",
+  "name": "{{ name }}",
   "version": "1.0.0",
-  "author": "springleo",
-  "description": "An electron project base on electron-vue",
-  "license": null,
+  "author": "{{ author }}",
+  "description": "{{ description }}",
+  "license": "{{ license }}",
   "main": "./dist/electron/main.js",
   "scripts": {
     "build": "node .electron-vue/build.js && electron-builder --win",
