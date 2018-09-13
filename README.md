@@ -16,7 +16,7 @@
 
 - [x] 日志记录： electron-log
 
-- [x] 网络检测： electron-log
+- [x] 网络检测： is-online
 
 
 ### 安装与使用
