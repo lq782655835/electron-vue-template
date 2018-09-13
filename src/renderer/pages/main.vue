@@ -32,7 +32,6 @@
 <script>
 import { mapState } from 'vuex'
 import UHeader from '@/components/u-header'
-import Ws from '@/components/main/ws'
 import { apiURL, MEETING_STATUS } from '@/utils/config'
 import { tokenLoc } from '@/utils/locs'
 
@@ -48,7 +47,6 @@ export default {
             isTranslate: true, // 是否有翻译
             isWait: true, // 是否显示“等待创建会议”
 
-            ws: null,
             // 全屏模式显示数据
             sourceHistory: [],
             transHistory: [],

@@ -11,7 +11,7 @@
     "build:dir": "node .electron-vue/build.js && electron-builder --dir",
     "build:clean": "cross-env BUILD_TARGET=clean node .electron-vue/build.js",
     "build:web": "cross-env BUILD_TARGET=web node .electron-vue/build.js",
-    "dev": "node .electron-vue/dev-runner.js & npm run svg:watch",
+    "dev": "node .electron-vue/dev-runner.js",
     "postinstall": "npm run svg",
     "svg:watch": "onchange './src/renderer/assets/svg/*.svg' -- npm run svg",
     "svg": "vsvg -s ./src/renderer/assets/svg -t ./src/renderer/assets/icon",
