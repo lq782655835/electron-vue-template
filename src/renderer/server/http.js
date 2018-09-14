@@ -1,3 +1,4 @@
+import Vue from 'vue'
 import axios from 'axios'
 import { apiURL } from '@/utils/config'
 import { tokenLoc } from '@/utils/locs'
@@ -35,7 +36,6 @@ service.interceptors.request.use(
 service.interceptors.response.use(
     response => {
         const res = response.data
-        console.log(res)
         if (res.success) {
             return res.data // 直接返回数据
         } else {
@@ -43,6 +43,7 @@ service.interceptors.response.use(
         }
     },
     error => {
+        Vue.prototype.$throw(error) // 错误存储在日志
         return Promise.reject(error)
     }
 )
