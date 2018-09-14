@@ -44,6 +44,8 @@
 </template>
 
 <script>
+import { IPC_RENDERER_SIGNAL } from '@/utils/config'
+
 export default {
     props: {
         showTooltips: { type: Boolean, default: true }
@@ -59,24 +61,24 @@ export default {
             this.$store.commit('setFloatSkin', floatSkin)
             switch (floatSkin) {
                 case 'float-opacity':
-                    this.$electron.ipcRenderer.send('transparent')
+                    this.$electron.ipcRenderer.send(IPC_RENDERER_SIGNAL.TRANSPARENT)
                     break
                 case 'float-normal':
-                    this.$electron.ipcRenderer.send('opaque')
+                    this.$electron.ipcRenderer.send(IPC_RENDERER_SIGNAL.OPAQUE)
                     break
             }
         },
         minimize() {
-            this.$electron.ipcRenderer.send('minimize')
+            this.$electron.ipcRenderer.send(IPC_RENDERER_SIGNAL.MINIMIZE)
         },
         maximize() {
-            let isFullScreen = this.$electron.ipcRenderer.sendSync('maximize')
+            let isFullScreen = this.$electron.ipcRenderer.sendSync(IPC_RENDERER_SIGNAL.MAXIMIZE)
             this.$store.commit('setFullScreen', isFullScreen)
             /* 切换模式时重置主题，以重置header样式 */
             !isFullScreen && this.setFloatSkin('float-normal')
         },
         close() {
-            this.$electron.ipcRenderer.send('close')
+            this.$electron.ipcRenderer.send(IPC_RENDERER_SIGNAL.CLOSE)
         }
     },
     computed: {
