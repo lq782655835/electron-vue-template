@@ -32,7 +32,7 @@
 <script>
 import { mapState } from 'vuex'
 import UHeader from '@/components/u-header'
-// import { IPC_RENDERER_SIGNAL } from '@/utils/config'
+import { IPC_RENDERER_SIGNAL } from '@/utils/config'
 
 export default {
     components: {
@@ -70,7 +70,7 @@ export default {
         })
     },
     created() {
-        this.$electron.ipcRenderer.send('resize-medium')
+        this.$electron.ipcRenderer.send(IPC_RENDERER_SIGNAL.SET_MAIN_SIZE)
     }
 }
 </script>

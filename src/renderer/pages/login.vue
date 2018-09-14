@@ -40,6 +40,7 @@ import UHeader from '@/components/u-header'
 import LLoginInput from '@/components/login/l-login-input'
 import { login } from '@/server/api'
 import { tokenLoc } from '@/utils/locs'
+import { IPC_RENDERER_SIGNAL } from '@/utils/config'
 
 export default {
     components: {
@@ -61,7 +62,7 @@ export default {
     },
     created() {
         tokenLoc.clear()
-        this.$electron.ipcRenderer.send('resize-login')
+        this.$electron.ipcRenderer.send(IPC_RENDERER_SIGNAL.SET_LOGIN_SIZE)
     },
     methods: {
         /* 登录 */
@@ -92,7 +93,7 @@ export default {
     position: relative;
     height: 100%;
     background-color: #ffffff;
-    & .header {
+    .header {
         position: absolute;
         top: 0;
 
@@ -100,18 +101,18 @@ export default {
             color: #536683;
         }
     }
-    & .login-container {
+    .login-container {
         flex-wrap: nowrap;
         width: 240px;
 
-        & .title {
+        .title {
             width: 100%;
             margin: 0;
             @include font-normal(29px, $white);
             font-weight: bold;
         }
 
-        & .login-button {
+        .login-button {
             margin-top: 50px;
             width: 100%;
             height: 40px;

@@ -69,18 +69,18 @@ export default {
 .login-input {
     position: relative;
 
-    & .main {
+    .main {
         position: relative;
         height: 32px;
         width: 240px;
         z-index: 10;
-        & .label {
+        .label {
             display: inline-block;
             white-space: nowrap;
             @include font-normal(14px, $white);
         }
 
-        & .input {
+        .input {
             margin-left: 5px;
             flex: 1;
             border: none;
@@ -104,36 +104,34 @@ export default {
         }
     }
 
-    & .message {
-        // max-width: 300px;
+    .message {
         margin-top: 15px;
         color: $white;
         @include font-normal(12px);
     }
 
     &[hint='normal'] {
-        & .message {
+        .message {
             @include font-normal(#a3b0c4);
         }
     }
 
     &[hint='error'] {
-        & .message {
-            // @include font-normal(#f52f50);
+        .message {
             color: #f52f50;
         }
     }
 
     &[color='black'] {
-        & .label {
+        .label {
             @include font-normal(14px, #738298);
         }
 
-        & .input {
+        .input {
             @include font-normal(14px, #738298, true);
         }
 
-        & .main:after {
+        .main:after {
             background-color: #d5dbe4;
         }
     }
