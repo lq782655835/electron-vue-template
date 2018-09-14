@@ -2,7 +2,7 @@
     <u-flex-layout direction="vertical" justify="center" alignment="center" class="login">
         <u-header :showTooltips="false" class="header"/>
         <u-flex-layout direction="vertical" justify="center" alignment="center" class="login-container">
-                <LLoginInput
+                <l-login-input
                     color="black"
                     label="主机地址"
                     :value="inputAddress"
@@ -13,7 +13,7 @@
                     @focus="showAddressHint(true)"
                     @blur="showAddressHint(false)"
                 />
-                <LLoginInput
+                <l-login-input
                     color="black"
                     label="验证码"
                     type="password"
@@ -66,21 +66,19 @@ export default {
     methods: {
         /* 登录 */
         async loginClick() {
-            if (this.isAccoutValue) {
-                this.loginButtonText = '登录中...'
-                await login({
-                    verificationCode: this.inputCheckcode
+            if (!this.isAccoutValue) return
+
+            this.loginButtonText = '登录中...'
+            await login({ verificationCode: this.inputCheckcode })
+                .then(res => {
+                    tokenLoc.set(res.token)
+                    this.loginButtonText = '登录成功'
+                    this.$router.push('/main')
                 })
-                    .then(res => {
-                        tokenLoc.set(res.token)
-                        this.loginButtonText = '登录成功'
-                        this.$router.push('/main')
-                    })
-                    .catch(res => {
-                        this.loginButtonText = '登录'
-                        this.loginErrorMessage = '主机地址或验证码不正确'
-                    })
-            }
+                .catch(res => {
+                    this.loginButtonText = '登录'
+                    this.loginErrorMessage = '主机地址或验证码不正确'
+                })
         },
 
         showAddressHint(bool) {

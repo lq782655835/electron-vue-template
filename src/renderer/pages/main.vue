@@ -32,8 +32,7 @@
 <script>
 import { mapState } from 'vuex'
 import UHeader from '@/components/u-header'
-import { apiURL, MEETING_STATUS } from '@/utils/config'
-import { tokenLoc } from '@/utils/locs'
+// import { IPC_RENDERER_SIGNAL } from '@/utils/config'
 
 export default {
     components: {
