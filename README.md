@@ -1,35 +1,51 @@
 # electron-vue-template
 
-> 本项目在electron-vue脚手架基础上，包含轻量级组件库、整理结构目录、以及工程必需的打包、自动更新、日志记录、网络检测等成套解决方案。帮助初次使用electron同学，提供一个较为完整的工程案例。项目中有些踩坑的点，包括一些不同平台打包差异，以及其他细节点，相信对做工程项目同学有借鉴意义，记录在[这里](https://github.com/lq782655835/blogs/issues/13)
+A complete electron project for client app
 
-- [x] 开发规范：eslint + perttier + husky
+## Compatibility
 
-- [x] css处理：scss + scss resource
+- [x] code standard：eslint + perttier + husky
 
-- [x] 轻量组件： link + button + icon（svgicon） + input + modal + select + tabs + toast
+- [x] css：scss + scss resource
 
-- [x] vue全家桶: vue-router/vuex/axios(vue官方推荐)
+- [x] light component: link + button + icon（svgicon） + input + modal + select + tabs + toast
 
-- [x] 打包： electron-builder
+- [x] vue: vue-router + vuex + axios
 
-- [x] 自动更新： electron-updater
+- [x] package： electron-builder
 
-- [x] 日志记录： electron-log
+- [x] auto update： electron-updater
 
-- [x] 网络检测： is-online
+- [x] log： electron-log
+
+- [x] network： is-online
 
 
-### 安装与使用
+## Usage
+
+### Development
 
 ``` bash
-git clone https://github.com/lq782655835/electron-vue-template.git
-
-cd electron-vue-template
-
 npm install && npm run dev
 ```
 
-### 项目截图
+### Build
+
+To build all platform
+
+```
+npm run build
+```
+
+To build specific platform
+
+```
+npm run build:mac     # for macOS
+npm run build:win     # for windows
+npm run build:linux   # for linux
+```
+
+## Preview
 
 ![image](https://user-images.githubusercontent.com/6310131/45092957-8c566000-b149-11e8-892d-37fb4d310982.png)
 
@@ -39,3 +55,7 @@ npm install && npm run dev
 ![image](https://user-images.githubusercontent.com/6310131/45093021-ba3ba480-b149-11e8-9357-ac6f16113d58.png)
 
 ![image](https://user-images.githubusercontent.com/6310131/45093034-c6276680-b149-11e8-9415-1facadee48b9.png)
+
+## License
+
+The code is distributed under the [MIT](http://opensource.org/licenses/MIT) license
