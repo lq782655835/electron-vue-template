@@ -1,11 +1,10 @@
 import Vue from 'vue'
 
-import App from './App'
+import app from './app'
 import router from './router'
 import store from './store'
 import errorHandle from '@/utils/logs' /* 前端日志记录 */
-
-import '@/utils/core'
+import '@/plugins' /* 组件，指令，插件等core统一入口 */
 
 if (!process.env.IS_WEB) Vue.use(require('vue-electron'))
 Vue.config.productionTip = false
@@ -17,8 +16,8 @@ require('electron').webFrame.setZoomLevelLimits(1, 1)
 
 /* eslint-disable no-new */
 new Vue({
-    components: { App },
+    components: { app },
     router,
     store,
-    template: '<App/>'
+    template: '<app/>'
 }).$mount('#app')

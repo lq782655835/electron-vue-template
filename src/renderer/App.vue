@@ -4,12 +4,6 @@
   </div>
 </template>
 
-<script>
-export default {
-    name: 'sight-viewer-app'
-}
-</script>
-
 <style>
 @import './assets/css/global.scss';
 body {

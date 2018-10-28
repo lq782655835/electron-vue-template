@@ -1,6 +1,6 @@
 # electron-vue-template
 
-A complete electron project for client app
+A complete electron client project by electron-vue base on NETEASE AI TEAM STANDARD
 
 ## Compatibility
 

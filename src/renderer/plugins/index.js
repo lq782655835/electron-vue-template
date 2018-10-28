@@ -1,7 +1,7 @@
 import Vue from 'vue'
 
 import './svg' /* 导入所有svg图片 */
-import './directives'
+import './directives' /* 导入所有指令 */
 
 import vClickOutside from 'v-click-outside'
 Vue.use(vClickOutside)
