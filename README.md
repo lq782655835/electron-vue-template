@@ -1,6 +1,6 @@
 # electron-vue-template
 
-A complete electron client project by electron-vue base on NETEASE AI TEAM STANDARD
+A complete electron client project by electron-vue base on [AI TEAM STANDARD](https://lq782655835.github.io/blogs/dist/team-standard/standard-ai-js.html)
 
 ## Compatibility
 
